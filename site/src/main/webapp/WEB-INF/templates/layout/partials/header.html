@@ -26,7 +26,7 @@
             <span id="headerCartItemWordPlural_i18n" style="display: none;" th:text="#{home.items}">items</span>
             <span th:text="#{home.items}">Welcome</span>
             <a id="cartLink" class="fancycart" th:href="@{/cart}">
-                <seo:img src="@{/img/shopping_cart.png}"/>
+                <seo:img src="@{/img/shopping_cart.png}" alt="Shopping Cart Icon" />
                 &nbsp; 
                 <span class="headerCartItemsCount" th:text="${cart.itemCount}" />
                 <span class="headerCartItemsCountWord" th:text="${cart.itemCount == 1} ? #{home.item} :  #{home.items}" />
